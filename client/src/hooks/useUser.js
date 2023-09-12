@@ -18,6 +18,15 @@ const useUser = () => {
     navitate("/auth")
   };
 
+  useEffect(() => {
+    if (!user) {
+      navitate("/auth")
+    }
+
+
+  }, [user])
+
+
 
   return {
     user,
