@@ -8,7 +8,7 @@ import { Billboard } from "./Billboard.jsx";
 const Home = () => {
   const { user } = useUser();
   const { movies } = useMoviesList();
-  const { favoriteMovies } = useGetFavoriteMovies(user._id);
+  const { favoriteMovies } = useGetFavoriteMovies(user?._id);
 
   return (
     <>
